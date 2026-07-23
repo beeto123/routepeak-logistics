@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update Shipment</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <h1>Update Shipment Status</h1>
+
+    <form id="updateForm">
+
+        <label>Shipment ID</label><br>
+        <input
+            type="text"
+            id="shipment_id"
+            required><br><br>
+
+        <label>Status</label><br>
+
+        <select id="status">
+
+            <option>Shipment Registered</option>
+            <option>Picked Up</option>
+            <option>In Transit</option>
+            <option>Held At Customs</option>
+            <option>Out For Delivery</option>
+            <option>Delivered</option>
+
+        </select>
+
+        <br><br>
+
+        <label>Current Location</label><br>
+
+        <input
+            type="text"
+            id="location">
+
+        <br><br>
+
+        <label>Description</label><br>
+
+        <textarea
+            id="description"
+            rows="5"></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Update Shipment
+        </button>
+
+    </form>
+
+    <script src="/js/updateShipment.js"></script>
+
+</body>
+
+</html>

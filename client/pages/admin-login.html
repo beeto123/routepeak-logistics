@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RoutePeak Admin Login</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+body{
+background:#f5f7fb;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial,sans-serif;
+}
+
+.login-box{
+
+width:420px;
+
+background:#fff;
+
+padding:40px;
+
+border-radius:12px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.login-box img{
+
+width:90px;
+
+display:block;
+
+margin:auto;
+
+margin-bottom:20px;
+
+}
+
+.login-box h2{
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+.login-box input{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:18px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+font-size:15px;
+
+}
+
+.login-box button{
+
+width:100%;
+
+padding:15px;
+
+background:#0b63ce;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:16px;
+
+}
+
+.login-box button:hover{
+
+background:#084ea5;
+
+}
+
+.error{
+
+color:red;
+
+text-align:center;
+
+margin-top:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<img src="../assets/images/logo.png">
+
+<h2>RoutePeak Admin</h2>
+
+<form id="loginForm">
+
+<input
+type="email"
+id="email"
+placeholder="Admin Email"
+required>
+
+<input
+type="password"
+id="password"
+placeholder="Password"
+required>
+
+<button>
+
+Login
+
+</button>
+
+</form>
+
+<p class="error" id="error"></p>
+
+</div>
+
+<script src="../js/adminLogin.js"></script>
+
+</body>
+</html>
